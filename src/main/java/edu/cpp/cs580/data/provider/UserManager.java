@@ -44,4 +44,12 @@ public interface UserManager {
 	 */
 	public List<User> listAllUsers();
 
+	/**
+	 * Appointment the given user from the storage.
+	 *
+	 * @param userId
+	 */
+	public void appointmentUser(String userId);
+
+
 }

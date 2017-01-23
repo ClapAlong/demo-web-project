@@ -32,6 +32,7 @@
 	                    <td>Major</td>
 	                    <td>Creation Time</td>
 	                    <td>Delete</td>
+	                    <td>Appointment</td>
 	                </tr>
 
 	                <tr ng-repeat="user in users">
@@ -40,6 +41,7 @@
 	                    <td>{{user.major}}</td>
 	                    <td>{{user.creationTime}}</td>
                         <td><button ng-click="deleteUser(user.id)">Delete</button></td>
+                        <td><button ng-click="appoinmentUser(user.id)">Appoinment</button></td>
 	                </tr>
 	            </table>
 	        </div>
@@ -74,11 +76,13 @@
 	                    <td>ID</td>
 	                    <td>Name</td>
 	                    <td>Major</td>
+	                    <td>Appointment</td>
 	                </tr>
 	                <tr>
 	                    <td><label>{{founduser.id}}</label></td>
 	                    <td><label>{{founduser.name}}</label></td>
 	                    <td><label>{{founduser.major}}</label></td>
+	                    <td><label>{{founduser.appointment}}</label></td>
 	                </tr>
 	            </table>
 	        </div>

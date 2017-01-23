@@ -132,5 +132,11 @@ public class WebController {
 		modelAndView.addObject("users", listAllUsers());
 		return modelAndView;
 	}
+	@RequestMapping(value = "/cs580/user/{userId}", method = RequestMethod.PUT)
+	void appointmentUser(
+			@PathVariable("userId") String userId){
+		userManager.appointmentUser(userId);
+	}
+	
 
 }
