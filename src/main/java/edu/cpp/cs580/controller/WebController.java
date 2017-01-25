@@ -132,11 +132,25 @@ public class WebController {
 		modelAndView.addObject("users", listAllUsers());
 		return modelAndView;
 	}
+	
+	/**
+	 * 
+	 * 
+	 * 
+	 */
 	@RequestMapping(value = "/cs580/user/{userId}", method = RequestMethod.PUT)
 	void appointmentUser(
 			@PathVariable("userId") String userId){
 		userManager.appointmentUser(userId);
 	}
 	
+	/**
+	 * Simple get request to welcome the user.
+	 *
+	 */
+	@RequestMapping(value = "/cs580/welcome", method = RequestMethod.GET)
+	String welcome() {
+		return "welcome to Timely!";
+	}
 
 }
