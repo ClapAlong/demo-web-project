@@ -152,5 +152,12 @@ public class WebController {
 	String welcome() {
 		return "welcome to Timely!";
 	}
-
+	/**
+	 * This is a test HTTP API for assignment 3.
+	 *
+	 */
+	@RequestMapping(value = "/cs580/httpapi", method = RequestMethod.GET)
+	String welcome() {
+		return "This is a test Http API";
+	}
 }
