@@ -157,7 +157,7 @@ public class WebController {
 	 *
 	 */
 	@RequestMapping(value = "/cs580/httpapi", method = RequestMethod.GET)
-	String welcome() {
+	String httpAPI() {
 		return "This is a test Http API";
 	}
 }
