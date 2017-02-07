@@ -138,7 +138,7 @@ public class WebController {
 	 * 
 	 * 
 	 */
-	@RequestMapping(value = "/cs580/user/{userId}", method = RequestMethod.PUT)
+	@RequestMapping(value = "/cs580/user/{userId}", method = RequestMethod.GET)
 	void appointmentUser(
 			@PathVariable("userId") String userId){
 		userManager.appointmentUser(userId);

@@ -1,5 +1,6 @@
 package edu.cpp.cs580;
 
+import org.junit.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -34,5 +35,9 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+    /*Temporary set it to null, using later*/
+    public static void appointmentTest(){
+    	Assert.assertNotNull(null);
     }
 }
